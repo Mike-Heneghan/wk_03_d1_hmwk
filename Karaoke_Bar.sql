@@ -46,9 +46,6 @@ INSERT INTO songs (title, artist) VALUES ('Free Fallin', 'Tom Petty');
 INSERT INTO songs (title, artist) VALUES ('Brown Sugar', 'The Rolling Stones');
 INSERT INTO songs (title, artist) VALUES ('Orthodox Man', 'Blaenavon');
 
-SELECT * FROM rooms;
-SELECT * FROM songs
-
 INSERT INTO rooms_songs (room_id, song_id) VALUES (1, 1);
 INSERT INTO rooms_songs (room_id, song_id) VALUES (1, 2);
 INSERT INTO rooms_songs (room_id, song_id) VALUES (1, 3);
@@ -60,7 +57,9 @@ INSERT INTO rooms_songs (room_id, song_id) VALUES (2, 8);
 INSERT INTO rooms_songs (room_id, song_id) VALUES (3, 9);
 INSERT INTO rooms_songs (room_id, song_id) VALUES (1, 10);
 
-
+SELECT * FROM rooms;
+SELECT * FROM songs;
+SELECT * FROM rooms_songs;
 
 
 
