@@ -57,10 +57,23 @@ INSERT INTO rooms_songs (room_id, song_id) VALUES (2, 8);
 INSERT INTO rooms_songs (room_id, song_id) VALUES (3, 9);
 INSERT INTO rooms_songs (room_id, song_id) VALUES (1, 10);
 
+INSERT INTO guests (name, wallet, favourite_song, room_id) VALUES ('Mike', 50, 2, 1);
+INSERT INTO guests (name, wallet, favourite_song, room_id) VALUES ('Simon', 60, 1, 1);
+INSERT INTO guests (name, wallet, favourite_song, room_id) VALUES ('Mariana', 100, 3, 3);
+INSERT INTO guests (name, wallet, favourite_song, room_id) VALUES ('Claire', 20, 4, 3);
+INSERT INTO guests (name, wallet, favourite_song, room_id) VALUES ('Rachel', 45, 5, 1);
+INSERT INTO guests (name, wallet, favourite_song, room_id) VALUES ('Andrew', 16, 6, 3);
+INSERT INTO guests (name, wallet, favourite_song, room_id) VALUES ('Keith', 89, 6, 1);
+INSERT INTO guests (name, wallet, favourite_song, room_id) VALUES ('Richard', 576, 8, 2);
+INSERT INTO guests (name, wallet, favourite_song, room_id) VALUES ('Ashleigh', 8, 7, 1);
+INSERT INTO guests (name, wallet, favourite_song, room_id) VALUES ('George', 90, 10, 1);
+INSERT INTO guests (name, wallet, favourite_song, room_id) VALUES ('Isobel', 34, 9, 2);
+INSERT INTO guests (name, wallet, favourite_song, room_id) VALUES ('Ella', 56, 8, 1);
+
 SELECT * FROM rooms;
 SELECT * FROM songs;
 SELECT * FROM rooms_songs;
-
+SELECT * FROM guests; 
 
 
 
