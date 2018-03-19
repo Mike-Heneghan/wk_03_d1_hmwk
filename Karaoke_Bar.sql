@@ -43,7 +43,7 @@ INSERT INTO songs (title, artist) VALUES ('Sentimental Mood', 'Duke Ellington');
 INSERT INTO songs (title, artist) VALUES ('Take the A Train', 'Duke Ellington');
 INSERT INTO songs (title, artist) VALUES ('Dirty Deeds', 'ACDC');
 INSERT INTO songs (title, artist) VALUES ('Free Fallin', 'Tom Petty');
-INSERT INTO songs (title, artist) VALUES ('Brown Sugar', 'The Rolling Stones');
+INSERT INTO songs (title, artist) VALUES ('Brown Sugar', 'The Rolling Stnes');
 INSERT INTO songs (title, artist) VALUES ('Orthodox Man', 'Blaenavon');
 
 INSERT INTO rooms_songs (room_id, song_id) VALUES (1, 1);
@@ -70,13 +70,28 @@ INSERT INTO guests (name, wallet, favourite_song, room_id) VALUES ('George', 90,
 INSERT INTO guests (name, wallet, favourite_song, room_id) VALUES ('Isobel', 34, 9, 2);
 INSERT INTO guests (name, wallet, favourite_song, room_id) VALUES ('Ella', 56, 8, 1);
 
-SELECT * FROM rooms;
-SELECT * FROM songs;
-SELECT * FROM rooms_songs;
-SELECT * FROM guests; 
+-- SELECT * FROM rooms;
+-- SELECT * FROM songs;
+-- SELECT * FROM rooms_songs;
+-- SELECT * FROM guests;
 
+-- Rock fans get 666 in wallets.
+UPDATE guests SET wallet = 666 WHERE room_id = 2;
+-- New fire regulations, all rooms limited to 12 max max_capacity.
+UPDATE rooms SET max_capacity = 12 where max_capacity > 12;
+-- Rectify typo in database.
+UPDATE songs SET artist = 'The Rolling Stones' WHERE artist = 'The Rolling Stnes';
 
+-- SELECT * FROM guests;
+-- SELECT * FROM rooms;
+-- SELECT * FROM songs;
 
+-- Read only the artists from songs column.
+SELECT artist FROM songs;
+-- Read only room name for rooms with max capacity of 12.
+SELECT name FROM rooms WHERE max_capacity = 12;
+-- Read only name and wallet from guests for the fat cat karaoke bar owners.
+SELECT name, wallet FROM guests;
 
 
 
