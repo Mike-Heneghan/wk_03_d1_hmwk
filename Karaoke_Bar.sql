@@ -96,7 +96,7 @@ SELECT name, wallet FROM guests;
 
 -- SELECT * FROM rooms_songs JOIN songs USING (song_id);
 
-SELECT rooms.name, songs.title FROM rooms, songs, rooms_songs WHERE rooms.id = rooms_songs.room_id AND songs.id = rooms_songs.song_id AND songs.id = 1 LIMIT 1;
+SELECT rooms.name, songs.title FROM rooms, songs, rooms_songs WHERE rooms.id = rooms_songs.room_id AND songs.id = rooms_songs.song_id AND rooms.id = 3 LIMIT 5;
 
 
 
